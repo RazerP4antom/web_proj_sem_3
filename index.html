@@ -1,0 +1,580 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <!--Font Awesome-->
+    <script src="https://kit.fontawesome.com/8b05353b57.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Style File -->
+    <link rel="stylesheet" href="style.css">
+
+    <title>Formula 1</title>
+    <script>
+      $(document).ready(function(){
+        $("#driver_jq").click(function(){
+          $("#div-1").fadeToggle();
+        });
+      });
+      </script>
+      <script>
+        $(document).ready(function(){
+          $("#constructor_jq").click(function(){
+            $("#div-2").fadeToggle();
+
+          });
+        });
+        </script>
+    
+
+  </head>
+  <body>
+        
+    <!-- Navbar Section-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-custom">
+        <a class="navbar-brand" href="#">
+            <i class="fas fa-flag-checkered"></i>
+            Formula 1</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent">
+          <span class="navbar-toggler-icon"></span>
+       </button>
+  
+       <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+         <ul class="navbar-nav">
+           <li class="nav-item"><a class="nav-link" href="Drivers/drivers.html">Drivers</a>
+           </li>
+  
+           <li class="nav-item"><a class="nav-link" href="Constructors/constructors.html">Teams</a>
+           </li>
+
+           <li class="nav-item"><a class="nav-link" href="Hall of Fame/hall.html">Hall of Fame</a>
+           </li>
+
+           <!-- <li class="nav-item"><a class="nav-link" href="World Map/europe.html">Map</a>
+           </li> -->
+
+           <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Tracks
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="/World Map/UK/uk.html">British GP</a></li>
+              <li><a class="dropdown-item" href="/World Map/Spain/spain.html">Spanish GP</a></li>
+              <li><a class="dropdown-item" href="/World Map/Italy/italy.html">Italian GP</a></li>
+              <li><a class="dropdown-item" href="/World Map/France/france.html">French GP</a></li>
+              <li><a class="dropdown-item" href="/World Map/Germany/germany.html">German GP</a></li>
+
+            </ul>
+          </li>
+  
+           <li class="nav-item"><a class="nav-link" href="Subscribe/subscribe.html">Subscribe</a>
+           </li>
+         </ul>
+       </div>
+     </nav><br><br><br><br>
+
+    <!--Header Section-->
+     <section id="header" class="py-4">
+         <div class="container">
+             <div class="row">
+                 <div class="col-md-12 text-center">
+                     <h3 class="display-4">Formula 1</h3>
+                     <p class="text-muted">Formula One, also called F1 in short, is an international auto racing sport. F1 is the highest level of single-seat, 
+                         open-wheel and open-cockpit professional motor racing contest.</p>
+                 </div>
+             </div>
+         </div>
+     
+    <!-- Carosel Section -->
+    <section id="testimonials" class="py-5 text-center">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="cloumn-md-8 mx-auto">
+              <div class="container">
+                <div id="carousel" class="carousel slide" data-bs-ride="carousel">
+                  <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                  </div>
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <img src="https://e1.365dm.com/21/06/768x432/skysports-start-f1-styrian-gp_5432524.jpg?20210630135023" style="width:100px; height:650px" class="d-block w-100" alt="...">
+                      <div class="carousel-caption d-none d-md-block"> 
+                      </div>
+                    </div>
+                    <div class="carousel-item">
+                      <img src="https://cdn.racingnews365.com/transforms/default/2047293/F1_DTS_S3_FIRSTLOOK_01_cec5a7870ed110198cefa527308d9a45.jpg" style="width:100px; height:650px" class="d-block w-100" alt="...">
+                      <div class="carousel-caption d-none d-md-block">
+                        
+                      </div>
+                    </div>
+                    <div class="carousel-item">
+                      <img src="https://www.grandprix247.com/wp-content/uploads/2018/04/2018-Chinese-Grand-Prix-Race-013.jpg" style="width:100px; height:650px" class="d-block w-100" alt="...">
+                      <div class="carousel-caption d-none d-md-block">
+                      </div>
+                    </div>
+   
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+               </div>
+              </div>
+             </div>
+            </div>
+           </div>
+         </section><br><br><br><br>
+         
+         <!-- HISTORY -->
+         <section id="history" class="py-3">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-6 text-center">
+                  <div class="historyArea text-start">
+                    <h3 class="display-3">History</h3>
+                    <p>The Formula One series originated with the European Championship of Grand Prix motor racing (q.v. for pre-1947 history) of the 1920s and 1930s. The formula consists of a set of rules that all participants' cars must meet. Formula One was a new formula agreed upon during 1946 after World War II, with the first non-championship races taking place that year. The first Formula 1 race was the 1946 Turin Grand Prix. A number of Grand Prix racing 
+                        organisations had laid out rules for a world championship before the war, but due to the suspension of racing during the conflict, the World Drivers' Championship did not become formalised until 1947. </p>
+                    <button type="button" name="button" class="btn btn-dark"><a href="https://en.wikipedia.org/wiki/Formula_One#History" target="_blank" style="color: red; text-decoration: none;">Read More</a></button>
+                    
+                  </div>
+                </div>
+                <div class="col-md-6 text-center">
+                  <div class="historyImage">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/b/be/MossLotusClimax19610806.jpg" class="img-fluid" alt="">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section><br><br><br>
+
+        
+    <!-- LATEST NEWS     -->
+    <section id="product" class="mt-5 pb-5">
+
+
+        <div class="container">
+          <div class="row">
+            <h3 class="display-4 text-center">Latest News <br><br></h3>
+            <div class="col-md-4">
+              <div class="card text-center pt-3">
+                <div class="card-img">
+                  <img src="https://e0.365dm.com/21/09/2048x1152/skysports-lando-norris-f1-mclaren_5527203.jpg" class=" rounded img-fluid my-2" style="width:200px; height:175px" alt="">
+                </div>
+                <div class="card-body">
+                  <h4>Russian GP</h4>
+                  <p>Norris on how he’s getting over <br> his Russian GP heartbreak</p>
+                  <button type="button" name="button" class="btn btn-dark">
+                      <a href="https://www.formula1.com/en/latest/article.you-learn-more-from-the-hard-moments-norris-on-how-hes-getting-over-his.rFWzzGiKChXLhudEJ0YMw.html" style="color: red;" target="_blank">
+                      Read More</a>
+                    </button>
+                </div>
+              </div>
+            </div>
+  
+            <div class="col-md-4">
+              <div class="card text-center pt-3">
+                <div class="card-img">
+                  <img src="https://www.bleachersnews.com/wp-content/uploads/2021/09/Max-Celebrates-on-Podium.jpg" class=" rounded img-fluid my-2" style="width:200px; height:175px" alt="">
+                </div>
+                <div class="card-body">
+                  <h4>Russian GP</h4>
+                  <p>How did Verstappen go from <br> last place to the podium in Sochi?</p>
+                  <button type="button" name="button" class="btn btn-dark"><a href="https://www.formula1.com/en/latest/article.watch-how-did-verstappen-go-from-last-place-to-the-podium-in-sochi.660BWikmYhSjXy3qCA0FQd.html" style="color: red;" target="_blank">
+                    Read More</a>
+                  </button>
+                </div>
+              </div>
+            </div>
+  
+            <div class="col-md-4">
+              <div class="card text-center pt-3">
+                <div class="card-img">
+                  <img src="https://files.gpblog.com/news/2021/09/30/v2_large_a529a085e6e4ab76ac060ce12ff57f288c64daa7.jpg" class="rounded img-fluid my-2" style="width:200px; height:175px" alt="">
+                </div>
+                <div class="card-body">
+                  <h4>Turkey GP</h4>
+                  <p>Sainz starts Turkey GP at the back <br> of the grid due to engine change</p>
+                  <button type="button" name="button" class="btn btn-dark"><a href="https://www.gpblog.com/en/news/95339/sainz-starts-turkey-gp-at-the-back-of-the-grid-due-to-engine-change.html" style="color: red;" target="_blank">Read More</a></button>
+                </div>
+              </div>
+            </div>
+  
+          </div>
+        </div>
+     </section><br><br><br>
+
+<!-- STANDINGS -->
+     <section id="standings">
+         <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-center"><h3>Driver's Standing</h3></div>
+            </div><br>
+            <div class="row">
+                <div class="col-md-12 text-center">
+                  <button id="driver_jq" type="button" name="button" class="btn btn-dark col-md-3 text-center" style="color: red;">Click here to know more</button>
+                </div>
+            </div>
+            <div id="div-1">
+                    <table class="table">
+                        <thead>
+                          <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">Driver</th>
+                            <th scope="col">Constructor</th>
+                            <th scope="col">Points</th>
+                            <th scope="col">Wins</th>
+                            <th scope="col">Podiums</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <th scope="row">1</th>
+                            <td>L Hamilton</td>
+                            <td>Mercedes</td>
+                            <td>246.5</td>
+                            <td>5</td>
+                            <td>11</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">2</th>
+                            <td>M Verstappen</td>
+                            <td>Red Bull</td>
+                            <td>244.5</td>
+                            <td>7</td>
+                            <td>11</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">3</th>
+                            <td>V Bottas</td>
+                            <td>Mercedes</td>
+                            <td>151</td>
+                            <td>0</td>
+                            <td>8</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">4</th>
+                            <td>L Norris</td>
+                            <td>McLaren</td>
+                            <td>139</td>
+                            <td>0</td>
+                            <td>4</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">5</th>
+                            <td>S Perez</td>
+                            <td>Red Bull</td>
+                            <td>129</td>
+                            <td>1</td>
+                            <td>2</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">6</th>
+                            <td>C Saiz Jr.</td>
+                            <td>Ferrari</td>
+                            <td>112.5</td>
+                            <td>0</td>
+                            <td>3</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">7</th>
+                            <td>C Leclerc</td>
+                            <td>Ferrari</td>
+                            <td>104</td>
+                            <td>0</td>
+                            <td>1</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">8</th>
+                            <td>D Ricciardo</td>
+                            <td>McLaren</td>
+                            <td>95</td>
+                            <td>1</td>
+                            <td>1</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">9</th>
+                            <td>P Gasly</td>
+                            <td>AlphaTauri</td>
+                            <td>66</td>
+                            <td>0</td>
+                            <td>1</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">10</th>
+                            <td>F Alonso</td>
+                            <td>Alpine</td>
+                            <td>58</td>
+                            <td>0</td>
+                            <td>0</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">11</th>
+                            <td>E Ocon</td>
+                            <td>Alpine</td>
+                            <td>45</td>
+                            <td>1</td>
+                            <td>1</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">12</th>
+                            <td>S Vettel</td>
+                            <td>Aston Martin</td>
+                            <td>35</td>
+                            <td>0</td>
+                            <td>1</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">13</th>
+                            <td>L Stroll</td>
+                            <td>Aston Martin</td>
+                            <td>24</td>
+                            <td>0</td>
+                            <td>0</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">14</th>
+                            <td>Y Tsunoda</td>
+                            <td>AlphaTauri</td>
+                            <td>18</td>
+                            <td>0</td>
+                            <td>0</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">15</th>
+                            <td>G Russell</td>
+                            <td>Williams</td>
+                            <td>16</td>
+                            <td>0</td>
+                            <td>1</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">16</th>
+                            <td>N Latifi</td>
+                            <td>Williams</td>
+                            <td>7</td>
+                            <td>0</td>
+                            <td>0</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">17</th>
+                            <td>K Raikkonen</td>
+                            <td>Alpha Romeo</td>
+                            <td>6</td>
+                            <td>0</td>
+                            <td>0</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">18</th>
+                            <td>A Giovinazzi</td>
+                            <td>Alfa Romeo</td>
+                            <td>1</td>
+                            <td>0</td>
+                            <td>0</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">19</th>
+                            <td>M Schumacher</td>
+                            <td>Haas</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">20</th>
+                            <td>N Mazepin</td>
+                            <td>Haas</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                </div>
+            </div>
+        </div><br><br><br>
+
+        <div class="container mt-5 constructor">
+            <div class="row">
+                <div class="col-md-12 text-center"><h3>Constructor's Standing</h3></div>
+            </div><br>
+            <div class="row">
+              <div class="col-md-12 text-center">
+                <button id="constructor_jq" type="button" name="button" class="btn btn-dark col-md-3 text-center" style="color: red;">Click here to know more</button>
+              </div>
+          </div>
+            <div id="div-2">
+                    <table class="table">
+                        <thead>
+                          <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">Constructor</th>
+                            <th scope="col">Points</th>
+                            <th scope="col">Wins</th>
+                            <th scope="col">Podiums</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <th scope="row">1</th>
+                            <td>Mercedes</td>
+                            <td>397.5</td>
+                            <td>5</td>
+                            <td>19</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">2</th>
+                            <td>Red Bull</td>
+                            <td>364.5</td>
+                            <td>8</td>
+                            <td>13</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">3</th>
+                            <td>McLaren</td>
+                            <td>234</td>
+                            <td>1</td>
+                            <td>5</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">4</th>
+                            <td>Ferrari</td>
+                            <td>216.5</td>
+                            <td>0</td>
+                            <td>4</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">5</th>
+                            <td>Alpine</td>
+                            <td>103</td>
+                            <td>1</td>
+                            <td>1</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">6</th>
+                            <td>AlphaTauri</td>
+                            <td>84</td>
+                            <td>0</td>
+                            <td>1</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">7</th>
+                            <td>Aston Martin</td>
+                            <td>59</td>
+                            <td>0</td>
+                            <td>1</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">8</th>
+                            <td>Williams</td>
+                            <td>23</td>
+                            <td>0</td>
+                            <td>1</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">9</th>
+                            <td>Alfa Romeo</td>
+                            <td>7</td>
+                            <td>0</td>
+                            <td>0</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">10</th>
+                            <td>Haas</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                </div>
+            </div>
+        </div>
+    </section><br><br><br><br><br><br><br><br>
+
+
+    <!--FOOTER SECTION-->
+    <footer id="footer" class="py-5">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6">
+              <div class="fisrt content">
+                <h2>Follow us</h2>
+                <p>Follow the F1 races on different social media channels.
+                    Don't miss out on any action !
+                </p>
+              </div>
+              <div class="social d-flex flex-row">
+                <a href="https://twitter.com/F1" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.facebook.com/Formula1" target="_blank"><i class="fab fa-facebook-square"></i></a>
+                <a href="https://www.instagram.com/f1/"><i class="fab fa-instagram"></i></a>
+              </div>
+            </div>
+
+            <div class="col-md-6">
+              <div class="second content">
+                <h2>Contact Us</h2>
+                <form class="" action="./Subscribe/contact_us.php" method="POST">
+                  <div class="email">
+                    <div class="text py-2">
+                      Email *
+                    </div>
+                    <input type="email" class="py-2" name="email-2" value="">
+                 </div>
+                 <div class="msg">
+                   <div class="text py-2">
+                     Message *
+                   </div>
+                   <textarea name="message" rows="2" cols="30"></textarea>
+                 </div>
+                 <div class="btn">
+                   <button type="submit" name="button">Send</button>
+                 </div>
+                </form>
+               </div>
+              </div>
+             </div>
+            </div>
+          </div>
+        </footer>
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-W8fXfP3gkOKtndU4JGtKDvXbO53Wy8SZCQHczT5FMiiqmQfUpWbYdTil/SxwZgAN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js" integrity="sha384-skAcpIdS7UcVUC05LJ9Dxay8AXcDYfBJqt1CJ85S/CFujBsIzCIv+l9liuYLaMQ/" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>
